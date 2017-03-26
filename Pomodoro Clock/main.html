@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <audio>
+        <source src="http://www.myinstants.com/media/sounds/alert-hq.mp3"></source>
+    </audio>
+  </head>
+  <body>
+    <h1>FreeCodeCamp</h1>
+    <h3>Pomodoro Clock</h3>
+    <div class='timers'>
+      <div class='break'>
+        <p>Break Length</p>
+        <div>
+          <button class='in' id='minusBreak'>-</button>
+          <p class='in' id='break'>5</p>
+          <button class='in' id='plusBreak'>+</button>
+        </div>
+      </div>
+      <div class='session'>
+        <p>Session Length</p>
+        <div>
+          <button class='in' id='minusCount'>-</button>
+          <p class='in' id='count'> 25 </p>
+          <button class='in' id='plusCount'>+</button>
+        </div>
+      </div>
+    </div>
+    <div class='clock' id='grad'>
+      <p class='title'>Session</p>
+      <p class='timer'>25</p>
+    </div>
+    <p>To start the countdown click the clock!</p>
+    <p>Pause and unpause by tapping the clock!</p>
+    <p>To reset the clock, choose your new times when the clock is paused and then click the clock!</p>
+  </body>
+</html>
