@@ -1,0 +1,55 @@
+<div class="game-body">
+  <div class="btn-seq btn-1 green" data-index="1">1</div>
+  <div class="btn-seq btn-2 red" data-index="2">2</div>
+  <div class="btn-seq btn-3 yellow" data-index="3">3</div>
+  <div class="btn-seq btn-4 blue" data-index="4">4</div>
+  <div class="controls">
+    <div class="controls-inner">
+      <div class="marquee"><span>simon</span></div>
+      <div class="control-btns">
+        <div class="control-btns-settings">
+          <div class="btn-set">
+            <div class="count"><span>--</span></div>
+            <span>COUNT</span>
+          </div>
+          <div class="btn-set">
+            <div class="btn start red"></div>
+            <span>START</span>
+          </div>
+          <div class="btn-set">
+            <div class="lt"></div>
+            <div class="btn strict yellow "></div>
+            <span>STRICT</span>
+          </div>
+        </div>
+        <div class="control-btns-onoff">
+          <div class="label on">OFF</div>
+          <input id="onoff" class="switch" type="checkbox" />
+          <label for="onoff"></label>
+          <div class="label off">ON</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<audio id="simon1" class="sfx" preload="auto">
+  <source src="http://googledrive.com/host/0BzxZ_GYZE1hUfjZFRGZxdFVoWEFiclhwOWJzS0RKMzJ4bTNFbWxTRkxNMTdDclFYWkM4Tlk/simon1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<audio id="simon2" class="sfx" preload="auto">
+  <source src="http://googledrive.com/host/0BzxZ_GYZE1hUfjZFRGZxdFVoWEFiclhwOWJzS0RKMzJ4bTNFbWxTRkxNMTdDclFYWkM4Tlk/simon2.mp3" type="audio/mpeg">
+</audio>
+<audio id="simon3" class="sfx" preload="auto">
+  <source src="http://googledrive.com/host/0BzxZ_GYZE1hUfjZFRGZxdFVoWEFiclhwOWJzS0RKMzJ4bTNFbWxTRkxNMTdDclFYWkM4Tlk/simon3.mp3" type="audio/mpeg">
+</audio>
+<audio id="simon4" class="sfx" preload="auto">
+  <source src="http://googledrive.com/host/0BzxZ_GYZE1hUfjZFRGZxdFVoWEFiclhwOWJzS0RKMzJ4bTNFbWxTRkxNMTdDclFYWkM4Tlk/simon4.mp3" type="audio/mpeg">
+</audio>
+<audio id="simon_buzz" class="sfx" preload="auto">
+  <source src="http://googledrive.com/host/0BzxZ_GYZE1hUfjZFRGZxdFVoWEFiclhwOWJzS0RKMzJ4bTNFbWxTRkxNMTdDclFYWkM4Tlk/simon_buzz.mp3" type="audio/mpeg">
+</audio>
+<audio id="simon_win" class="sfx" preload="auto">
+  <source src="http://googledrive.com/host/0BzxZ_GYZE1hUfjZFRGZxdFVoWEFiclhwOWJzS0RKMzJ4bTNFbWxTRkxNMTdDclFYWkM4Tlk/winner.mp3" type="audio/mpeg">
+</audio>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="simon.js"></script>
