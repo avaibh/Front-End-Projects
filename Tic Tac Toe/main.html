@@ -1,0 +1,41 @@
+<body ng-app="app" ng-controller="mainController">
+    <div class="modal fade" id="start" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button ng-click="start('X')" type="button" class="btn btn-default btn-dialog dialog btn-X" data-dismiss="modal"><b>X</b></button>
+                    <button ng-click="start('O')" type="button" class="btn btn-default btn-dialog dialog btn-O" data-dismiss="modal"><b>O</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table class="table line">
+        <tbody class="tbody">
+            <tr class="tr">
+                <td ng-click="!disabled[2] || square(2)" class="even td btn-default cursor bottom top right" id="2">{{ttt[2]}}</td>
+                <td ng-click="!disabled[5] || square(5)" class="odd td btn-default cursor bottom top right" id="5">{{ttt[5]}}</td>
+                <td ng-click="!disabled[8] || square(8)" class="even td btn-default cursor bottom top" id="8">{{ttt[8]}}</td>
+            </tr>
+            <tr class="tr">
+                <td ng-click="!disabled[1] || square(1)" class="odd td btn-default cursor bottom right" id="1">{{ttt[1]}}</td>
+                <td ng-click="!disabled[4] || square(4)" class="even td btn-default cursor bottom right" id="4">{{ttt[4]}}</td>
+                <td ng-click="!disabled[7] || square(7)" class="odd td btn-default cursor bottom" id="7">{{ttt[7]}}</td>
+            </tr>
+            <tr class="tr">
+                <td ng-click="!disabled[0] || square(0)" class="even td btn-default cursor right" id="0">{{ttt[0]}}</td>
+                <td ng-click="!disabled[3] || square(3)" class="odd td btn-default cursor right" id="3">{{ttt[3]}}</td>
+                <td ng-click="!disabled[6] || square(6)" class="even td btn-default cursor" id="6">{{ttt[6]}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="modal fade" id="over" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title dialog" ng-bind-html="over | renderHtml"></h4>
+                    <button ng-click="again()" type="button" class="btn btn-default btn-again" data-dismiss="modal" aria-label="Close">Again?</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
